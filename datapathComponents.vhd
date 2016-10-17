@@ -21,7 +21,8 @@ package datapathComponents is
         port(
             IP1, IP2 : in std_logic_vector(15 downto 0);
             OP : out std_logic_vector(15 downto 0);
-            aluOP : in std_logic);
+            aluOP : in std_logic
+            C: out std_logic);
     end component;
     
     --Memory for instruction, data
