@@ -36,6 +36,7 @@ begin
     pco <= regOut(7);
     
     regIn(to_integer(unsigned(a3))) <= d3;
-    regEn <= (to_integer(unsigned(a3)) => '1', others => '0');
+    regEn <= (to_integer(unsigned(a3)) => '1', others => '0') when (regWr='1') 
+            else (others => '0');
 end Behave;
 
