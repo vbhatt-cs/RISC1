@@ -12,7 +12,7 @@ package datapathComponents is
             d3, pci : in std_logic_vector(15 downto 0);
             d1, d2, pco : out std_logic_vector(15 downto 0);
             regWr, pcWr : in std_logic;
-            clk,reset : in std_logic);
+            clk : in std_logic);
     end component;
 
     --ALU for add, nand
@@ -21,8 +21,7 @@ package datapathComponents is
         port(
             IP1, IP2 : in std_logic_vector(15 downto 0);
             OP : out std_logic_vector(15 downto 0);
-            aluOP : in std_logic;
-            clk, reset : in std_logic);
+            aluOP : in std_logic);
     end component;
     
     --Memory for instruction, data
@@ -35,8 +34,8 @@ package datapathComponents is
         port(
             A, Din : in std_logic_vector(15 downto 0);
             Dout : out std_logic_vector(15 downto 0);
-            memR, memWR : in std_logic;
-            clk, reset : in std_logic);
+            memWR : in std_logic;
+            clk : in std_logic);
     end component;
     
     --Generic register
@@ -46,6 +45,5 @@ package datapathComponents is
             Din : in std_logic_vector(data_width-1 downto 0);
             Dout : out std_logic_vector(data_width-1 downto 0);
             clk, enable : in std_logic);
-    end component;
-    
+    end component;    
 end package;
