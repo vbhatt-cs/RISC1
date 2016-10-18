@@ -12,7 +12,7 @@ entity memory is
 end entity;
 
 architecture Behave of memory is
-    type ram_t is array (0 to 255) of std_logic_vector(7 downto 0);
+    type ram_t is array (0 to 65535) of std_logic_vector(7 downto 0);
     signal ram : ram_t := (others => (others => '0'));
 begin
     Dout <= ram(to_integer(unsigned(A)));
