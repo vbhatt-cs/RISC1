@@ -15,28 +15,30 @@ end entity;
 
 architecture Behave of regFile is
     type vec16 is array(natural range <>) of std_logic_vector(15 downto 0);
-    signal regIn, regOut : vec16(0 to 7);
-    signal pcIn : std_logic_vector(15 downto 0);
-    signal regEn : std_logic_vector(0 to 7);
+    signal reg : vec16(0 to 7) := (others => (others => '0'));
 begin
-    GEN_REG:
-    for i in 0 to 6 generate
-        REGX: 
-            dataRegister generic map (data_width => 16)
-            port map (Din => regIn(I), Dout => regOut(I), enable => regEn(I),clk => clk);
-    end generate GEN_REG;
+
+    d1 <= reg(to_integer(unsigned(a1)));
+    d2 <= reg(to_integer(unsigned(a2)));
+    pco <= reg(7);
     
-    pcIn <= pci when (pcWr='1') else regIn(7);
-    PC: dataRegister generic map (data_width => 16)
-        port map (Din => pcIn, Dout => regOut(7), enable => (regEn(7) or pcWr), clk => clk);
-    
-    d1 <= regOut(to_integer(unsigned(a1)));
-    d2 <= regOut(to_integer(unsigned(a2)));
-    
-    pco <= regOut(7);
-    
-    regIn(to_integer(unsigned(a3))) <= d3;
-    regEn <= (to_integer(unsigned(a3)) => '1', others => '0') when (regWr='1') 
-            else (others => '0');
+    process(clk)
+        variable wrAddr : integer := 0;
+    begin
+        wrAddr := to_integer(unsigned(a3));
+        if(rising_edge(Clk)) then
+            if(reset='1') then
+                reg <= (others => (others => '0'));
+            else 
+                if(regWR='1') then
+                    reg(wrAddr) <= d3;
+                end if;
+                -- Write to PC. R7 not being written through A3,D3.
+                if(pcWr='1' and (wrAddr/=7 or regWR='0')) then 
+                    reg(7) <= pci;
+                end if;
+            end if;
+        end if; 
+    end process;
 end Behave;
 

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Oct 23 20:24:33 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : RISC1
+Top-level Entity Name : Comparator
+Family : MAX II
+Device : EPM240T100C3
+Timing Models : Final
+Total logic elements : 11 / 240 ( 5 % )
+Total pins : 33 / 80 ( 41 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

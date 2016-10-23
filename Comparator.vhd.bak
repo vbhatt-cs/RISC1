@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.datapathComponents.all;
+
+entity Comparator is
+	port(
+        Comp_D1,Comp_D2: in std_logic_vector(15 downto 0);
+	    Comp_out: std_logic);
+end entity;
+
+architecture Behave of dataRegister is
+begin
+	constant zeros : std_logic_vector(15 downto 0) := (others => '0');
+    process(Comp_D1,Comp_D2)
+		variable Comp_out_t: std_logic_vector(15 downto 0);
+	begin
+		Comp_out_t:= Comp_D1 xor Comp_D2
+        if(Comp_out_t=zeros) then
+            Comp_out<='1';
+        else
+        	Comp_out<='0';
+		end if;
+    end process;
+end Behave;

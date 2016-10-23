@@ -21,7 +21,7 @@ package datapathComponents is
         port(
             IP1, IP2 : in std_logic_vector(15 downto 0);
             OP : out std_logic_vector(15 downto 0);
-            aluOP : in std_logic
+            aluOP : in std_logic;
             C: out std_logic);
     end component;
     
@@ -47,4 +47,23 @@ package datapathComponents is
             Dout : out std_logic_vector(data_width-1 downto 0);
             clk, enable : in std_logic);
     end component;    
+    
+    --Comparator
+    component Comparator is
+        port(
+		    Comp_D1,Comp_D2: in std_logic_vector(15 downto 0);
+			Comp_out: out std_logic);
+    end component; 
+    
+    --Custom priority encoder
+    --v tells whether the output is valid or not
+    --a gives the location of least significant 1.
+    --d returns the input with zero in the location of the least significant 1.
+    component PE is
+        port(
+            inp: in std_logic_vector(15 downto 0);
+            v: out std_logic;
+            a: out std_logic_vector(2 downto 0);
+            d: out std_logic_vector(15 downto 0));
+    end component;
 end package;

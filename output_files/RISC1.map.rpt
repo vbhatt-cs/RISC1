@@ -1,5 +1,5 @@
-Analysis & Synthesis report for RISC1
-Tue Oct 11 22:24:03 2016
+Analysis & Elaboration report for RISC1
+Sun Oct 23 20:59:53 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -7,10 +7,10 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -34,24 +34,35 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Oct 11 22:24:03 2016           ;
-; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
-; Revision Name               ; RISC1                                       ;
-; Top-level Entity Name       ; RISC1                                       ;
-; Family                      ; MAX V                                       ;
-+-----------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Oct 23 20:59:53 2016       ;
+; Quartus Prime Version         ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                 ; RISC1                                       ;
+; Top-level Entity Name         ; Comparator                                  ;
+; Family                        ; MAX II                                      ;
++-------------------------------+---------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; RISC1              ; RISC1              ;
-; Family name                                                                ; MAX V              ; Cyclone V          ;
+; Top-level entity name                                                      ; Comparator         ; RISC1              ;
+; Family name                                                                ; MAX II             ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -116,26 +127,18 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Oct 11 22:23:49 2016
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISC1 -c RISC1
+    Info: Processing started: Sun Oct 23 20:59:38 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISC1 -c RISC1 --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file Comparator.vhd
+    Info (12022): Found design unit 1: Comparator-Behave File: /home/virtualgod/Altera/RISC1/Comparator.vhd Line: 12
+    Info (12023): Found entity 1: Comparator File: /home/virtualgod/Altera/RISC1/Comparator.vhd Line: 6
 Info (12021): Found 1 design units, including 0 entities, in source file datapathComponents.vhd
     Info (12022): Found design unit 1: datapathComponents File: /home/virtualgod/Altera/RISC1/datapathComponents.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file regFile.vhd
@@ -145,13 +148,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file dataReg
     Info (12022): Found design unit 1: dataRegister-Behave File: /home/virtualgod/Altera/RISC1/dataRegister.vhd Line: 14
     Info (12023): Found entity 1: dataRegister File: /home/virtualgod/Altera/RISC1/dataRegister.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-Behave File: /home/virtualgod/Altera/RISC1/alu.vhd Line: 15
+    Info (12022): Found design unit 1: alu-Behave File: /home/virtualgod/Altera/RISC1/alu.vhd Line: 16
     Info (12023): Found entity 1: alu File: /home/virtualgod/Altera/RISC1/alu.vhd Line: 7
-Error (12007): Top-level design entity "RISC1" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 1160 megabytes
-    Error: Processing ended: Tue Oct 11 22:24:03 2016
-    Error: Elapsed time: 00:00:14
-    Error: Total CPU time (on all processors): 00:00:37
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-Behave File: /home/virtualgod/Altera/RISC1/memory.vhd Line: 15
+    Info (12023): Found entity 1: memory File: /home/virtualgod/Altera/RISC1/memory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file RISC1.vhd
+    Info (12022): Found design unit 1: RISC1-Struct File: /home/virtualgod/Altera/RISC1/RISC1.vhd Line: 11
+    Info (12023): Found entity 1: RISC1 File: /home/virtualgod/Altera/RISC1/RISC1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file PE.vhd
+    Info (12022): Found design unit 1: PE-behave File: /home/virtualgod/Altera/RISC1/PE.vhd Line: 15
+    Info (12023): Found entity 1: PE File: /home/virtualgod/Altera/RISC1/PE.vhd Line: 7
+Info (12127): Elaborating entity "Comparator" for the top level hierarchy
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1471 megabytes
+    Info: Processing ended: Sun Oct 23 20:59:53 2016
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:37
 
 

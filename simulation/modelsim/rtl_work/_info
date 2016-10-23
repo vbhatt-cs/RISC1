@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/virtualgod/Altera/RISC1/simulation/modelsim
+Pdatapathcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1477226449
+R0
+8/home/virtualgod/Altera/RISC1/datapathComponents.vhd
+F/home/virtualgod/Altera/RISC1/datapathComponents.vhd
+l0
+L4
+V3hXCIG@WUOP16clQn:c==2
+!s100 c>8_7R>zXKGh<;L<;XzS41
+Z3 OV;C;10.4b;61
+31
+Z4 !s110 1477227065
+!i10b 1
+Z5 !s108 1477227065.000000
+!s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/datapathComponents.vhd|
+!s107 /home/virtualgod/Altera/RISC1/datapathComponents.vhd|
+!i113 1
+Z6 o-93 -work work
+Z7 tExplicit 1
+Eregfile
+Z8 w1477224634
+Z9 DPx4 work 18 datapathcomponents 0 22 3hXCIG@WUOP16clQn:c==2
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R0
+Z11 8/home/virtualgod/Altera/RISC1/regFile.vhd
+Z12 F/home/virtualgod/Altera/RISC1/regFile.vhd
+l0
+L7
+Vj?YCT]T20m_gc84m1KG`73
+!s100 KTP^M?1JG`0e5z^d`5j[E0
+R3
+31
+R4
+!i10b 1
+R5
+Z13 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/regFile.vhd|
+Z14 !s107 /home/virtualgod/Altera/RISC1/regFile.vhd|
+!i113 1
+R6
+R7
+Abehave
+R9
+R10
+R1
+R2
+DEx4 work 7 regfile 0 22 j?YCT]T20m_gc84m1KG`73
+l19
+L16
+VR2S3[V6iJ`4D@]Tba6kOG2
+!s100 Jhk=VkIgA?k?W8B;_Jf^V1
+R3
+31
+R4
+!i10b 1
+R5
+R13
+R14
+!i113 1
+R6
+R7
+Etestbench
+Z15 w1477226964
+R10
+R1
+R2
+R0
+Z16 8/home/virtualgod/Altera/RISC1/testbench_regfile.vhd
+Z17 F/home/virtualgod/Altera/RISC1/testbench_regfile.vhd
+l0
+L5
+VjKgdg1@CQF3UiHOImBg1X1
+!s100 LBzUjfjj_eDYLaRo:?DAa1
+R3
+31
+R4
+!i10b 1
+R5
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/testbench_regfile.vhd|
+Z19 !s107 /home/virtualgod/Altera/RISC1/testbench_regfile.vhd|
+!i113 1
+R6
+R7
+Abehave
+R10
+R1
+R2
+DEx4 work 9 testbench 0 22 jKgdg1@CQF3UiHOImBg1X1
+l26
+L8
+V<CdeMDgjjaO5nQi^;@[hM1
+!s100 iPhQ6B<8nbfk2Mme]MeB62
+R3
+31
+R4
+!i10b 1
+R5
+R18
+R19
+!i113 1
+R6
+R7

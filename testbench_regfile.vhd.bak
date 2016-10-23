@@ -1,0 +1,140 @@
+library std;
+use std.textio.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+use ieee.numeric_std.all;
+
+entity Testbench is
+end entity;
+
+architecture Behave of Testbench is
+	component StringRecognizer is
+		port(x : in std_logic_vector(4 downto 0);
+				clk,reset : in std_logic;
+				y : out std_logic);
+	end component StringRecognizer;
+
+	signal X : std_logic_vector(4 downto 0);
+	signal y : std_logic;
+	signal clk : std_logic := '0';
+	signal reset : std_logic := '0';
+	
+	function to_string(x: string) return string is
+		variable ret_val: string(1 to x'length);
+		alias lx : string (1 to x'length) is x;
+	begin  
+		ret_val := lx;
+		return(ret_val);
+	end to_string;
+
+begin
+  dut: StringRecognizer port map(x =>X , y => y, clk => clk, reset => reset);
+
+	process
+		variable err_flag : boolean := false;
+		File INFILE: text open read_mode is "TRACEFILE.txt";
+		FILE OUTFILE: text open write_mode is "in.txt";
+		variable input_bv: std_logic_vector(4 downto 0);
+		variable output_bv: std_logic;
+		
+		variable input_char: character;
+		variable output_char: character;
+		variable INPUT_LINE: Line;
+		variable OUTPUT_LINE: Line;
+		variable scOutput_line: Line;
+	
+		variable clk_bit: std_logic;
+		variable reset_bit: std_logic;
+		
+		variable input_parallel: std_logic_vector(7 downto 0);
+	begin 
+		while not endfile(INFILE) loop 
+			clk <= '0';
+			reset <= '1';
+			
+			write(scOutput_line,string'("SDR 7 TDI(20) 1 TDO(0) MASK(0)"));
+			writeline(OUTFILE, scOutput_line);
+			write(scOutput_line,string'("RUNTEST 1 MSEC"));
+			writeline(OUTFILE, scOutput_line);
+			
+			wait for 25 ns;
+			clk <= '1';
+			
+			write(scOutput_line,string'("SDR 7 TDI(60) 1 TDO(0) MASK(0)"));
+			writeline(OUTFILE, scOutput_line);
+			write(scOutput_line,string'("RUNTEST 1 MSEC"));
+			writeline(OUTFILE, scOutput_line);
+			
+			wait for 25 ns;
+			reset <= '0';
+			
+			readLine (INFILE, INPUT_LINE);
+			readLine (INFILE, OUTPUT_LINE);
+			
+			for i in 1 to INPUT_LINE'length loop
+				read (INPUT_LINE, input_char);			
+				read (OUTPUT_LINE, output_char);
+				
+				if(input_char=' ') then
+					input_bv := "11011";
+				else
+					input_bv := std_logic_vector(to_unsigned(character'pos(input_char)-96, 5));
+				end if;
+				
+				clk <= '0';
+				X <= input_bv;
+				
+				if(output_char='n') then
+					output_bv := '0';
+				elsif(output_char='y') then 
+					output_bv := '1';
+				end if;
+				
+				input_parallel(7):='0';
+				input_parallel(6):='0';	--clk
+				input_parallel(5):='0';	--reset
+				input_parallel(4 downto 0):=input_bv;
+				
+				write(scOutput_line,string'("SDR 7 TDI("));
+				hwrite(scOutput_line,input_parallel);
+				write(scOutput_line,string'(") 1 TDO("));
+				write(scOutput_line,output_bv);
+				write(scOutput_line,string'(") MASK(1)"));
+				writeline(OUTFILE, scOutput_line);
+				write(scOutput_line,string'("RUNTEST 1 MSEC"));
+				writeline(OUTFILE, scOutput_line);
+					
+				wait for 25 ns;
+				
+				if (y /= output_bv) then
+					report "x" severity note;
+					err_flag := true;
+				end if; 
+				
+				clk <= '1';
+				
+				input_parallel(7):='0';
+				input_parallel(6):='1';	--clk
+				input_parallel(5):='0';	--reset
+				input_parallel(4 downto 0):=input_bv;
+				
+				write(scOutput_line,string'("SDR 7 TDI("));
+				hwrite(scOutput_line,input_parallel);
+				write(scOutput_line,string'(") 1 TDO("));
+				write(scOutput_line,output_bv);
+				write(scOutput_line,string'(") MASK(0)"));
+				writeline(OUTFILE, scOutput_line);
+				write(scOutput_line,string'("RUNTEST 1 MSEC"));
+				writeline(OUTFILE, scOutput_line);
+				
+				wait for 25 ns;
+			end loop;
+		end loop;
+    
+	assert (err_flag) report "SUCCESS, all tests passed." severity note;
+   assert (not err_flag) report "FAILURE, some tests failed." severity error;
+	
+	wait;
+	end process;
+end Behave;

@@ -13,14 +13,17 @@ entity alu is
 end entity;
 
 architecture Behave of alu is
-signal IP1_s : SIGNED(IP1'length+1 downto 0);
-signal IP2_s : SIGNED(IP2'length+1 downto 0);
-signal OP_s : SIGNED(IP1'length+1 downto 0);
-constant zeros : std_logic_vector(15 downto 0) := (others => '0');
+signal IP1_s : std_logic_vector(16 downto 0);
+signal IP2_s : std_logic_vector(16 downto 0);
+signal OP_s : std_logic_vector(16 downto 0);
+
 begin
-	IP1_s <= resize(signed(IP1), IP1_s'length+1);
-	IP2_s <= resize(signed(IP2), IP2_s'length+1);
-	OP_s <= IP1_s + IP2_s;
+	IP1_s(16) <= '0';
+	IP1_s(15 downto 0) <= IP1;
+	IP2_s(16) <= '0';
+	IP2_s(15 downto 0) <= IP2;
+	
+	OP_s <= std_logic_vector(unsigned(IP1_s) + unsigned(IP2_s));
 	OP <= std_logic_vector(OP_s(15 downto 0)) when (aluOP='0') 
 	        else (IP1 nand IP2);
 	C<= OP_s(16) when (aluOP='0') else '0';

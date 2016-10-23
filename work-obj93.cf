@@ -1,0 +1,36 @@
+v 3
+file . "PE.vhd" "20161023152706.000" "20161023205712.050":
+  entity pe at 1( 0) + 0 on 145;
+  architecture behave of pe at 15( 318) + 0 on 146;
+file . "testbench_comp.vhd" "20161023143852.000" "20161023200855.434":
+  entity testbench_comp at 1( 0) + 0 on 134;
+  architecture behave of testbench_comp at 8( 108) + 0 on 135;
+file . "testbench_alu.vhd" "20161023123920.000" "20161023194807.934":
+  entity testbench_alu at 1( 0) + 0 on 119;
+  architecture behave of testbench_alu at 8( 107) + 0 on 120;
+file . "testbench_mem.vhd" "20161023141447.000" "20161023194635.400":
+  entity testbench_memory at 1( 0) + 0 on 114;
+  architecture behave of testbench_memory at 8( 110) + 0 on 115;
+file . "dataRegister.vhd" "20161011165227.000" "20161018161440.030":
+  entity dataregister at 1( 0) + 0 on 35;
+  architecture behave of dataregister at 14( 311) + 0 on 36;
+file . "testbench_regfile.vhd" "20161023124924.000" "20161023192946.179":
+  entity testbench at 1( 0) + 0 on 69;
+  architecture behave of testbench at 8( 103) + 0 on 70;
+file . "datapathComponents.vhd" "20161023145400.000" "20161023205712.017":
+  package datapathcomponents at 1( 0) + 0 on 144;
+file . "regFile.vhd" "20161023121034.000" "20161023192946.228":
+  entity regfile at 1( 0) + 0 on 71;
+  architecture behave of regfile at 16( 392) + 0 on 72;
+file . "memory.vhd" "20161023141628.000" "20161023194635.371":
+  entity memory at 1( 0) + 0 on 112;
+  architecture behave of memory at 15( 317) + 0 on 113;
+file . "alu.vhd" "20161023123942.000" "20161023194807.896":
+  entity alu at 1( 0) + 0 on 117;
+  architecture behave of alu at 14( 268) + 0 on 118;
+file . "Comparator.vhd" "20161023143122.000" "20161023200855.412":
+  entity comparator at 1( 0) + 0 on 132;
+  architecture behave of comparator at 12( 222) + 0 on 133;
+file . "testbench_pe.vhd" "20161023152543.000" "20161023205712.092":
+  entity testbench_pe at 1( 0) + 0 on 147;
+  architecture behave of testbench_pe at 8( 106) + 0 on 148;

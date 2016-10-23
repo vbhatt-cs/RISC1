@@ -1,0 +1,36 @@
+|Comparator
+Comp_D1[0] => Equal0.IN15
+Comp_D1[1] => Equal0.IN14
+Comp_D1[2] => Equal0.IN13
+Comp_D1[3] => Equal0.IN12
+Comp_D1[4] => Equal0.IN11
+Comp_D1[5] => Equal0.IN10
+Comp_D1[6] => Equal0.IN9
+Comp_D1[7] => Equal0.IN8
+Comp_D1[8] => Equal0.IN7
+Comp_D1[9] => Equal0.IN6
+Comp_D1[10] => Equal0.IN5
+Comp_D1[11] => Equal0.IN4
+Comp_D1[12] => Equal0.IN3
+Comp_D1[13] => Equal0.IN2
+Comp_D1[14] => Equal0.IN1
+Comp_D1[15] => Equal0.IN0
+Comp_D2[0] => Equal0.IN31
+Comp_D2[1] => Equal0.IN30
+Comp_D2[2] => Equal0.IN29
+Comp_D2[3] => Equal0.IN28
+Comp_D2[4] => Equal0.IN27
+Comp_D2[5] => Equal0.IN26
+Comp_D2[6] => Equal0.IN25
+Comp_D2[7] => Equal0.IN24
+Comp_D2[8] => Equal0.IN23
+Comp_D2[9] => Equal0.IN22
+Comp_D2[10] => Equal0.IN21
+Comp_D2[11] => Equal0.IN20
+Comp_D2[12] => Equal0.IN19
+Comp_D2[13] => Equal0.IN18
+Comp_D2[14] => Equal0.IN17
+Comp_D2[15] => Equal0.IN16
+Comp_out << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
