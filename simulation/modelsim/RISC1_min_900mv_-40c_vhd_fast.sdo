@@ -1,0 +1,1050 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+// 
+// Device: Altera EP2AGX45CU17I3 Package UFBGA358
+// 
+
+//
+// This file contains Fast Corner delays for the design using part EP2AGX45CU17I3,
+// with speed grade M, core voltage 0.9V, and temperature -40 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "memory")
+  (DATE "10/24/2016 12:52:37")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[0\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (302:302:302) (329:329:329))
+        (IOPATH i o (1372:1372:1372) (1393:1393:1393))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[1\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (374:374:374) (398:398:398))
+        (IOPATH i o (1312:1312:1312) (1316:1316:1316))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[2\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2138:2138:2138) (2134:2134:2134))
+        (IOPATH i o (1351:1351:1351) (1370:1370:1370))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[3\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (380:380:380) (405:405:405))
+        (IOPATH i o (1352:1352:1352) (1373:1373:1373))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[4\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (268:268:268) (285:285:285))
+        (IOPATH i o (1282:1282:1282) (1286:1286:1286))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[5\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (444:444:444) (455:455:455))
+        (IOPATH i o (1342:1342:1342) (1363:1363:1363))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[6\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (294:294:294) (306:306:306))
+        (IOPATH i o (1275:1275:1275) (1280:1280:1280))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[7\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (320:320:320) (338:338:338))
+        (IOPATH i o (1371:1371:1371) (1390:1390:1390))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[8\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (200:200:200) (221:221:221))
+        (IOPATH i o (1351:1351:1351) (1370:1370:1370))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[9\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (579:579:579) (574:574:574))
+        (IOPATH i o (1421:1421:1421) (1440:1440:1440))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[10\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3020:3020:3020) (2976:2976:2976))
+        (IOPATH i o (1351:1351:1351) (1370:1370:1370))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[11\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3090:3090:3090) (3039:3039:3039))
+        (IOPATH i o (1302:1302:1302) (1306:1306:1306))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[12\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (240:240:240) (272:272:272))
+        (IOPATH i o (1361:1361:1361) (1380:1380:1380))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[13\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3149:3149:3149) (3103:3103:3103))
+        (IOPATH i o (1352:1352:1352) (1373:1373:1373))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[14\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (631:631:631) (643:643:643))
+        (IOPATH i o (1380:1380:1380) (1383:1383:1383))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE \\Dout\[15\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (563:563:563) (555:555:555))
+        (IOPATH i o (1370:1370:1370) (1373:1373:1373))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\memWR\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (226:226:226) (592:592:592))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\clk\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (171:171:171) (539:539:539))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_and2")
+    (INSTANCE \\clk\~inputclkctrl\\.outclk_and)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH IN1 Y (205:205:205) (197:197:197))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (217:217:217) (587:587:587))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (183:183:183) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (236:236:236) (602:602:602))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[2\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (173:173:173) (547:547:547))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[3\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (236:236:236) (605:605:605))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[4\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (187:187:187) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[5\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (216:216:216) (585:585:585))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[6\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (197:197:197) (567:567:567))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[7\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (163:163:163) (537:537:537))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[8\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (187:187:187) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[9\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (197:197:197) (567:567:567))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\A\[10\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (236:236:236) (602:602:602))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (216:216:216) (585:585:585))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[2\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (187:187:187) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[3\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (173:173:173) (547:547:547))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2374:2374:2374) (2384:2384:2384))
+        (PORT d[1] (2471:2471:2471) (2472:2472:2472))
+        (PORT d[2] (2641:2641:2641) (2611:2611:2611))
+        (PORT d[3] (2453:2453:2453) (2447:2447:2447))
+        (PORT clk (886:886:886) (862:862:862))
+        (PORT ena (287:287:287) (281:281:281))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (32:32:32))
+      (HOLD d (posedge clk) (16:16:16))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2541:2541:2541) (2542:2542:2542))
+        (PORT d[1] (3219:3219:3219) (3195:3195:3195))
+        (PORT d[2] (2444:2444:2444) (2443:2443:2443))
+        (PORT d[3] (2513:2513:2513) (2508:2508:2508))
+        (PORT d[4] (2697:2697:2697) (2669:2669:2669))
+        (PORT d[5] (2449:2449:2449) (2445:2445:2445))
+        (PORT d[6] (2535:2535:2535) (2531:2531:2531))
+        (PORT d[7] (2505:2505:2505) (2498:2498:2498))
+        (PORT d[8] (2644:2644:2644) (2626:2626:2626))
+        (PORT d[9] (2456:2456:2456) (2460:2460:2460))
+        (PORT d[10] (2657:2657:2657) (2640:2640:2640))
+        (PORT clk (903:903:903) (876:876:876))
+        (PORT ena (300:300:300) (283:283:283))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (36:36:36))
+      (HOLD d (posedge clk) (25:25:25))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2459:2459:2459) (2465:2465:2465))
+        (PORT clk (926:926:926) (915:915:915))
+        (PORT ena (335:335:335) (341:341:341))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (25:25:25))
+      (HOLD d (posedge clk) (28:28:28))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (926:926:926) (915:915:915))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (916:916:916))
+        (IOPATH (posedge clk) pulse (0:0:0) (3191:3191:3191))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (916:916:916))
+        (IOPATH (posedge clk) pulse (0:0:0) (609:609:609))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (916:916:916))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (916:916:916))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (591:591:591) (581:581:581))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (582:582:582))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (582:582:582))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a0\\.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (582:582:582))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[4\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (226:226:226) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[5\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (187:187:187) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[6\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (226:226:226) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[7\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (236:236:236) (602:602:602))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2447:2447:2447) (2439:2439:2439))
+        (PORT d[1] (2435:2435:2435) (2427:2427:2427))
+        (PORT d[2] (2317:2317:2317) (2314:2314:2314))
+        (PORT d[3] (2631:2631:2631) (2609:2609:2609))
+        (PORT clk (886:886:886) (863:863:863))
+        (PORT ena (287:287:287) (281:281:281))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (32:32:32))
+      (HOLD d (posedge clk) (16:16:16))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2702:2702:2702) (2693:2693:2693))
+        (PORT d[1] (3191:3191:3191) (3198:3198:3198))
+        (PORT d[2] (2636:2636:2636) (2624:2624:2624))
+        (PORT d[3] (2682:2682:2682) (2668:2668:2668))
+        (PORT d[4] (2710:2710:2710) (2685:2685:2685))
+        (PORT d[5] (2417:2417:2417) (2413:2413:2413))
+        (PORT d[6] (2716:2716:2716) (2699:2699:2699))
+        (PORT d[7] (2703:2703:2703) (2690:2690:2690))
+        (PORT d[8] (2772:2772:2772) (2751:2751:2751))
+        (PORT d[9] (2649:2649:2649) (2642:2642:2642))
+        (PORT d[10] (2859:2859:2859) (2831:2831:2831))
+        (PORT clk (903:903:903) (877:877:877))
+        (PORT ena (300:300:300) (283:283:283))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (36:36:36))
+      (HOLD d (posedge clk) (25:25:25))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2640:2640:2640) (2638:2638:2638))
+        (PORT clk (926:926:926) (916:916:916))
+        (PORT ena (335:335:335) (341:341:341))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (25:25:25))
+      (HOLD d (posedge clk) (28:28:28))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (926:926:926) (916:916:916))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (917:917:917))
+        (IOPATH (posedge clk) pulse (0:0:0) (3191:3191:3191))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (917:917:917))
+        (IOPATH (posedge clk) pulse (0:0:0) (609:609:609))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (917:917:917))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (927:927:927) (917:917:917))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (591:591:591) (582:582:582))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (583:583:583))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (583:583:583))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a4\\.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (592:592:592) (583:583:583))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[8\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (153:153:153) (527:527:527))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[9\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (246:246:246) (612:612:612))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[10\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (177:177:177) (547:547:547))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[11\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (236:236:236) (602:602:602))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2222:2222:2222) (2248:2248:2248))
+        (PORT d[1] (2302:2302:2302) (2304:2304:2304))
+        (PORT d[2] (2302:2302:2302) (2304:2304:2304))
+        (PORT d[3] (2211:2211:2211) (2237:2237:2237))
+        (PORT clk (876:876:876) (853:853:853))
+        (PORT ena (287:287:287) (281:281:281))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (32:32:32))
+      (HOLD d (posedge clk) (16:16:16))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2279:2279:2279) (2273:2273:2273))
+        (PORT d[1] (3509:3509:3509) (3481:3481:3481))
+        (PORT d[2] (2557:2557:2557) (2535:2535:2535))
+        (PORT d[3] (2511:2511:2511) (2496:2496:2496))
+        (PORT d[4] (2845:2845:2845) (2800:2800:2800))
+        (PORT d[5] (2572:2572:2572) (2551:2551:2551))
+        (PORT d[6] (2287:2287:2287) (2275:2275:2275))
+        (PORT d[7] (2331:2331:2331) (2330:2330:2330))
+        (PORT d[8] (2388:2388:2388) (2372:2372:2372))
+        (PORT d[9] (2317:2317:2317) (2318:2318:2318))
+        (PORT d[10] (2395:2395:2395) (2377:2377:2377))
+        (PORT clk (893:893:893) (867:867:867))
+        (PORT ena (300:300:300) (283:283:283))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (36:36:36))
+      (HOLD d (posedge clk) (25:25:25))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2445:2445:2445) (2456:2456:2456))
+        (PORT clk (916:916:916) (906:906:906))
+        (PORT ena (335:335:335) (341:341:341))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (25:25:25))
+      (HOLD d (posedge clk) (28:28:28))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (916:916:916) (906:906:906))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (907:907:907))
+        (IOPATH (posedge clk) pulse (0:0:0) (3191:3191:3191))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (907:907:907))
+        (IOPATH (posedge clk) pulse (0:0:0) (609:609:609))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (907:907:907))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (907:907:907))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (581:581:581) (572:572:572))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (573:573:573))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (573:573:573))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a8\\.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (573:573:573))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[12\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (173:173:173) (547:547:547))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[13\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (226:226:226) (592:592:592))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[14\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (187:187:187) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE \\Din\[15\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (216:216:216) (585:585:585))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2449:2449:2449) (2453:2453:2453))
+        (PORT d[1] (2520:2520:2520) (2512:2512:2512))
+        (PORT d[2] (2512:2512:2512) (2523:2523:2523))
+        (PORT d[3] (2450:2450:2450) (2454:2454:2454))
+        (PORT clk (876:876:876) (852:852:852))
+        (PORT ena (287:287:287) (281:281:281))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (32:32:32))
+      (HOLD d (posedge clk) (16:16:16))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2429:2429:2429) (2429:2429:2429))
+        (PORT d[1] (3487:3487:3487) (3459:3459:3459))
+        (PORT d[2] (2389:2389:2389) (2379:2379:2379))
+        (PORT d[3] (2365:2365:2365) (2366:2366:2366))
+        (PORT d[4] (2673:2673:2673) (2644:2644:2644))
+        (PORT d[5] (2400:2400:2400) (2391:2391:2391))
+        (PORT d[6] (2262:2262:2262) (2290:2290:2290))
+        (PORT d[7] (2352:2352:2352) (2353:2353:2353))
+        (PORT d[8] (2456:2456:2456) (2440:2440:2440))
+        (PORT d[9] (2397:2397:2397) (2390:2390:2390))
+        (PORT d[10] (2456:2456:2456) (2438:2438:2438))
+        (PORT clk (893:893:893) (866:866:866))
+        (PORT ena (300:300:300) (283:283:283))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (36:36:36))
+      (HOLD d (posedge clk) (25:25:25))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2463:2463:2463) (2470:2470:2470))
+        (PORT clk (916:916:916) (905:905:905))
+        (PORT ena (335:335:335) (341:341:341))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (25:25:25))
+      (HOLD d (posedge clk) (28:28:28))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (916:916:916) (905:905:905))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (906:906:906))
+        (IOPATH (posedge clk) pulse (0:0:0) (3191:3191:3191))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (906:906:906))
+        (IOPATH (posedge clk) pulse (0:0:0) (609:609:609))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (906:906:906))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (917:917:917) (906:906:906))
+        (IOPATH (posedge clk) pulse (0:0:0) (403:403:403))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_register")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (581:581:581) (571:571:571))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (572:572:572))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (572:572:572))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_ram_pulse_generator")
+    (INSTANCE \\ram_rtl_0\|auto_generated\|ram_block1a12\\.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (582:582:582) (572:572:572))
+        (IOPATH (posedge clk) pulse (0:0:0) (411:411:411))
+      )
+    )
+  )
+)

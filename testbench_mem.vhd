@@ -38,12 +38,13 @@ begin
 		memWR <= '1';
 		wait until clk='1';
 		
-		A <= "0000000010100011";
+		A <= "0000000000000000";
 		Din <= "1100010001110001";
 		memWR <= '0';
 		wait until clk='1';
+		wait until clk='0';
 		
-		if (Dout /= "0100010001110001") then
+		if (Dout /= "0011000000001010") then
 			report integer'image(to_integer(unsigned(Dout))) severity note;
 			err_flag := true;
 		end if;
@@ -52,6 +53,7 @@ begin
 		Din <= "1101010001110001";
 		memWR <= '0';
 		wait until clk='1';
+		wait until clk='0';
 		
 		if (Dout /= "1100010001110001") then
 			report integer'image(to_integer(unsigned(Dout))) severity note;

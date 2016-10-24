@@ -12,7 +12,7 @@ package datapathComponents is
             d3, pci : in std_logic_vector(15 downto 0);
             d1, d2, pco : out std_logic_vector(15 downto 0);
             regWr, pcWr : in std_logic;
-            clk : in std_logic);
+            clk,reset : in std_logic);
     end component;
 
     --ALU for add, nand

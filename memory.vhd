@@ -3,6 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 library work;
 use work.datapathComponents.all;
+use work.mem_package.all;
 
 entity memory is
     port( 
@@ -13,8 +14,7 @@ entity memory is
 end entity;
 
 architecture Behave of memory is
-    type ram_t is array (0 to 65535) of std_logic_vector(15 downto 0);
-    signal ram : ram_t := (others => (others => '0'));
+    signal ram : ram_t := MEM_INIT;
 begin
     Dout <= ram(to_integer(unsigned(A)));
     process(clk)
@@ -23,6 +23,7 @@ begin
             if(memWR='1') then
                 ram(to_integer(unsigned(A))) <= Din;
             end if;
-        end if; 
+            
+        end if;
     end process;
 end Behave;

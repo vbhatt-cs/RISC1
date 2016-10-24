@@ -1,4 +1,6 @@
 v 3
+file . "memPackage.vhd" "20161024072350.000" "20161024130028.387":
+  package mem_package at 1( 0) + 0 on 209;
 file . "PE.vhd" "20161023152706.000" "20161023205712.050":
   entity pe at 1( 0) + 0 on 145;
   architecture behave of pe at 15( 318) + 0 on 146;
@@ -8,23 +10,23 @@ file . "testbench_comp.vhd" "20161023143852.000" "20161023200855.434":
 file . "testbench_alu.vhd" "20161023123920.000" "20161023194807.934":
   entity testbench_alu at 1( 0) + 0 on 119;
   architecture behave of testbench_alu at 8( 107) + 0 on 120;
-file . "testbench_mem.vhd" "20161023141447.000" "20161023194635.400":
-  entity testbench_memory at 1( 0) + 0 on 114;
-  architecture behave of testbench_memory at 8( 110) + 0 on 115;
+file . "testbench_mem.vhd" "20161024072955.000" "20161024130028.495":
+  entity testbench_memory at 1( 0) + 0 on 212;
+  architecture behave of testbench_memory at 8( 110) + 0 on 213;
 file . "dataRegister.vhd" "20161011165227.000" "20161018161440.030":
   entity dataregister at 1( 0) + 0 on 35;
   architecture behave of dataregister at 14( 311) + 0 on 36;
 file . "testbench_regfile.vhd" "20161023124924.000" "20161023192946.179":
   entity testbench at 1( 0) + 0 on 69;
   architecture behave of testbench at 8( 103) + 0 on 70;
-file . "datapathComponents.vhd" "20161023145400.000" "20161023205712.017":
-  package datapathcomponents at 1( 0) + 0 on 144;
+file . "datapathComponents.vhd" "20161023145400.000" "20161024002555.865":
+  package datapathcomponents at 1( 0) + 0 on 203;
 file . "regFile.vhd" "20161023121034.000" "20161023192946.228":
   entity regfile at 1( 0) + 0 on 71;
   architecture behave of regfile at 16( 392) + 0 on 72;
-file . "memory.vhd" "20161023141628.000" "20161023194635.371":
-  entity memory at 1( 0) + 0 on 112;
-  architecture behave of memory at 15( 317) + 0 on 113;
+file . "memory.vhd" "20161024072130.000" "20161024130028.466":
+  entity memory at 1( 0) + 0 on 210;
+  architecture behave of memory at 16( 343) + 0 on 211;
 file . "alu.vhd" "20161023123942.000" "20161023194807.896":
   entity alu at 1( 0) + 0 on 117;
   architecture behave of alu at 14( 268) + 0 on 118;

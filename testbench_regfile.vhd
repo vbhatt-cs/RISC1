@@ -24,7 +24,7 @@ architecture Behave of Testbench_RF is
 	end component;
 
 	begin
-    clk <= not clk after 10 ns when (finished='0') else '0'; -- assume 20ns clock.
+        clk <= not clk after 10 ns when (finished='0') else '0'; -- assume 20ns clock.
 
     -- reset process
     process

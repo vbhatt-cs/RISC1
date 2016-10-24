@@ -1,0 +1,6 @@
+lhi r0,10
+lhi r1,20
+add r2,r1,r0
+ndu r3,r1,r7
+sw r2,r4,29
+sw r3,r4,30
