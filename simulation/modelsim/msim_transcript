@@ -6,55 +6,52 @@
 # vmap work rtl_work
 # Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
 # vmap -modelsim_quiet work rtl_work 
-# Copying /home/virtualgod/Altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
-# ** Warning: Copied /home/virtualgod/Altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
-#          Updated modelsim.ini.
+# Modifying /home/virtualgod/Altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini
 # 
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/controlpath.vhdl}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/controlpath.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlpath
 # -- Compiling architecture behaviour of controlpath
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/memPackage.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/memPackage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package mem_package
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/datapathComponents.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/datapathComponents.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package datapathComponents
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/finalComponents.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/finalComponents.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package finalComponents
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/DataPath_RISC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -63,11 +60,11 @@
 # -- Loading package datapathComponents
 # -- Compiling entity Datapath_RISC
 # -- Compiling architecture Build of DataPath_RISC
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/Comparator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/Comparator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -75,11 +72,11 @@
 # -- Loading package datapathComponents
 # -- Compiling entity Comparator
 # -- Compiling architecture Behave of Comparator
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/regFile.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/regFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -88,11 +85,11 @@
 # -- Loading package datapathComponents
 # -- Compiling entity regFile
 # -- Compiling architecture Behave of regFile
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/dataRegister.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/dataRegister.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -100,11 +97,11 @@
 # -- Loading package datapathComponents
 # -- Compiling entity dataRegister
 # -- Compiling architecture Behave of dataRegister
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/alu.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +110,11 @@
 # -- Loading package datapathComponents
 # -- Compiling entity alu
 # -- Compiling architecture Behave of alu
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/memory.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -127,11 +124,11 @@
 # -- Loading package mem_package
 # -- Compiling entity memory
 # -- Compiling architecture Behave of memory
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/RISC1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/RISC1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -139,11 +136,11 @@
 # -- Loading package finalComponents
 # -- Compiling entity RISC1
 # -- Compiling architecture Struct of RISC1
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/PE.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/PE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -152,12 +149,24 @@
 # -- Loading package datapathComponents
 # -- Compiling entity PE
 # -- Compiling architecture behave of PE
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/flipFlop.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 00:43:21 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/flipFlop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package datapathComponents
+# -- Compiling entity flipFlop
+# -- Compiling architecture Behave of flipFlop
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {/home/virtualgod/Altera/RISC1/testbench_full.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/testbench_full.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -165,12 +174,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Testbench_full
 # -- Compiling architecture Behave of Testbench_full
-# End time: 20:54:15 on Oct 26,2016, Elapsed time: 0:00:00
+# End time: 00:43:21 on Oct 29,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  Testbench_full
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" Testbench_full 
-# Start time: 20:54:15 on Oct 26,2016
+# Start time: 00:43:21 on Oct 29,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -185,6 +194,7 @@
 # Loading work.memory(behave)
 # Loading work.regfile(behave)
 # Loading work.comparator(behave)
+# Loading work.flipflop(behave)
 # Loading work.dataregister(behave)
 # Loading work.alu(behave)
 # Loading work.controlpath(behaviour)
@@ -213,7 +223,329 @@
 #    Time: 40 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 50 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/rf/reg(0) \
+sim:/testbench_full/dut/dp/rf/reg(1) \
+sim:/testbench_full/dut/dp/rf/reg(2) \
+sim:/testbench_full/dut/dp/rf/reg(3) \
+sim:/testbench_full/dut/dp/rf/reg(4) \
+sim:/testbench_full/dut/dp/rf/reg(5) \
+sim:/testbench_full/dut/dp/rf/reg(6) \
+sim:/testbench_full/dut/dp/rf/reg(7)
+add wave -position insertpoint  \
+sim:/testbench_full/dut/cp/state
+restart
+log -r *
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/mem/ram(30)
+restart
+log -r *
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/mem/A \
+sim:/testbench_full/dut/dp/mem/Dout
+do RISC1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying /home/virtualgod/Altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini
 # 
-# stdin: <EOF>
-# End time: 20:55:04 on Oct 26,2016, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 9
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/controlpath.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/controlpath.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlpath
+# -- Compiling architecture behaviour of controlpath
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/memPackage.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/memPackage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mem_package
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/datapathComponents.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/datapathComponents.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package datapathComponents
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/finalComponents.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/finalComponents.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package finalComponents
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/DataPath_RISC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package datapathComponents
+# -- Compiling entity Datapath_RISC
+# -- Compiling architecture Build of DataPath_RISC
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/Comparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/Comparator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package datapathComponents
+# -- Compiling entity Comparator
+# -- Compiling architecture Behave of Comparator
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/regFile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/regFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package datapathComponents
+# -- Compiling entity regFile
+# -- Compiling architecture Behave of regFile
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/dataRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/dataRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package datapathComponents
+# -- Compiling entity dataRegister
+# -- Compiling architecture Behave of dataRegister
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package datapathComponents
+# -- Compiling entity alu
+# -- Compiling architecture Behave of alu
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package datapathComponents
+# -- Loading package mem_package
+# -- Compiling entity memory
+# -- Compiling architecture Behave of memory
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/RISC1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/RISC1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package finalComponents
+# -- Compiling entity RISC1
+# -- Compiling architecture Struct of RISC1
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/PE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/PE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package datapathComponents
+# -- Compiling entity PE
+# -- Compiling architecture behave of PE
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/flipFlop.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/flipFlop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package datapathComponents
+# -- Compiling entity flipFlop
+# -- Compiling architecture Behave of flipFlop
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/virtualgod/Altera/RISC1/testbench_full.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:02:42 on Oct 29,2016
+# vcom -reportprogress 300 -93 -work work /home/virtualgod/Altera/RISC1/testbench_full.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_full
+# -- Compiling architecture Behave of Testbench_full
+# End time: 01:02:42 on Oct 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  Testbench_full
+# End time: 01:02:43 on Oct 29,2016, Elapsed time: 0:19:22
+# Errors: 0, Warnings: 27
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" Testbench_full 
+# Start time: 01:02:43 on Oct 29,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench_full(behave)
+# Loading work.finalcomponents
+# Loading work.risc1(struct)
+# Loading work.datapathcomponents
+# Loading work.datapath_risc(build)
+# Loading work.pe(behave)
+# Loading work.mem_package
+# Loading work.memory(behave)
+# Loading work.regfile(behave)
+# Loading work.comparator(behave)
+# Loading work.flipflop(behave)
+# Loading work.dataregister(behave)
+# Loading work.alu(behave)
+# Loading work.controlpath(behaviour)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/rf/reg(0) \
+sim:/testbench_full/dut/dp/rf/reg(1) \
+sim:/testbench_full/dut/dp/rf/reg(2) \
+sim:/testbench_full/dut/dp/rf/reg(3) \
+sim:/testbench_full/dut/dp/rf/reg(4) \
+sim:/testbench_full/dut/dp/rf/reg(5) \
+sim:/testbench_full/dut/dp/rf/reg(6) \
+sim:/testbench_full/dut/dp/rf/reg(7)
+add wave -position insertpoint  \
+sim:/testbench_full/dut/cp/state
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/mem/ram(30)
+add wave -position insertpoint  \
+sim:/testbench_full/dut/dp/mem/A \
+sim:/testbench_full/dut/dp/mem/Dout
+add wave -position insertpoint  \
+sim:/testbench_full/clk
+restart
+log -r *
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_full/dut/dp/mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 0  Instance: /testbench_full/dut/dp/rf
+# End time: 01:04:28 on Oct 29,2016, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 18

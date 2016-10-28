@@ -7,21 +7,21 @@ end entity;
 
 architecture Behave of Testbench_full is
 	component RISC1 is
-        port(clk,reset: in std_logic);
+        port(clk,rst: in std_logic);
     end component;
     
 	signal clk : std_logic := '0';
-	signal reset : std_logic := '1';
+	signal reset : std_logic := '0';
     signal finished : std_logic := '0';
 begin
-    dut: RISC1 port map(clk=>clk, reset=>reset);
+    dut: RISC1 port map(clk=>clk, rst=>reset);
     clk <= not clk after 10 ns when (finished='0') else '0'; -- assume 20ns clock.
 
     -- reset process
     process
     begin
         wait until clk = '1';
-        reset <= '0';
+        reset <= '1';
         wait;
     end process;
     

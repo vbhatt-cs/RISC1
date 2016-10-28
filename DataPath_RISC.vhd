@@ -33,7 +33,8 @@ begin
     --Memory
     Mem_A <= T2_out when (M1="10") else
     		T3_out when (M1="11") else
-            RF_pco;
+            RF_pco when (M1="00") else
+            alu_out;
     Mem_din <=	T3_out when (M2='0') else T2_out;
     mem: memory
     		port map(A=>Mem_A, Din=>Mem_din, Dout=>Mem_dout, memWR=>MemWr, clk=>clk);

@@ -17,6 +17,7 @@ vcom -93 -work work {/home/virtualgod/Altera/RISC1/alu.vhd}
 vcom -93 -work work {/home/virtualgod/Altera/RISC1/memory.vhd}
 vcom -93 -work work {/home/virtualgod/Altera/RISC1/RISC1.vhd}
 vcom -93 -work work {/home/virtualgod/Altera/RISC1/PE.vhd}
+vcom -93 -work work {/home/virtualgod/Altera/RISC1/flipFlop.vhd}
 
 vcom -93 -work work {/home/virtualgod/Altera/RISC1/testbench_full.vhd}
 

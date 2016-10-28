@@ -171,6 +171,7 @@ begin
                 Alu_op_var := '1';
             elsif (IRVal(15 downto 12) = "0100") then 
                 next_state := s5;
+                M1_var := "01";
                 M13_var := "10";
                 Alu_op_var := '0';
             elsif (IRVal(15 downto 12) = "0101") then 

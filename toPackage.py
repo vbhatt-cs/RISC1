@@ -6,7 +6,7 @@ fo=open(sys.argv[2],"w")
 fo.write("library ieee;\n")
 fo.write("use ieee.std_logic_1164.all;\n")
 fo.write("package mem_package is\n")
-fo.write("type ram_t is array (0 to 32767) of std_logic_vector(15 downto 0);\n")
+fo.write("type ram_t is array (0 to 16383) of std_logic_vector(15 downto 0);\n")
 fo.write("constant MEM_INIT : ram_t := (\n")
 
 cnt=0
