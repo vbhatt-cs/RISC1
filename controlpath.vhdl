@@ -114,7 +114,7 @@ begin
                 M10_var := "01";
                 T4En_var := '1';
             elsif (IRVal(15 downto 12) = "0110") then 
-                next_state := s7;
+                next_state := s15;
                 M10_var := "00";
                 T4En_var := '1';
             elsif (IRVal(15 downto 12) = "0111") then 
@@ -127,7 +127,7 @@ begin
             end if;
                  
         when s3 => 
-            next_state := s1;
+            next_state := s0;
             M7_var := '0';
             M8_var := '0';
             PCWr_var := '1';
@@ -139,8 +139,12 @@ begin
             elsif (IRVal(15 downto 12) = "0011") then
                 M4_var := "00";
                 M5_var := "10";
-            elsif ((IRVal(15 downto 12) = "0001") or (IRVal(15 downto 12) = "0100")) then
+            elsif (IRVal(15 downto 12) = "0001") then
                 M4_var := "11";
+                M5_var := "01";
+                ZEn_var := '1';
+            elsif (IRVal(15 downto 12) = "0100") then
+                M4_var := "00";
                 M5_var := "01";
                 ZEn_var := '1';
             end if;
@@ -149,9 +153,15 @@ begin
             M11_var := "10";
             M12_var := "01";
             T3En_var := '1';                      
-            if ((IRVal(15 downto 12) = "0000") or (IRVal(15 downto 12) = "0001")) then 
+            if (IRVal(15 downto 12) = "0000") then 
                 next_state := s3;
                 M13_var := "01";
+                CEn_var := '1';
+                Alu_op_var := '0';
+            elsif (IRVal(15 downto 12) = "0001") then
+                next_state := s3;
+                M13_var := "10";
+                M12_var := "10";
                 CEn_var := '1';
                 Alu_op_var := '0';
             elsif (IRVal(15 downto 12) = "0010") then
@@ -182,12 +192,12 @@ begin
             MemWr_var := '1';
 
         when s7 =>
-            M1_var := "10";
+            --M1_var := "10";
             M9_var := '1';
             M11_var := "00";
             M12_var := "10";
             M13_var := "00";
-            PCWr_var := '1';
+            
             T2En_var := '1';
             T3En_var := '1';
             if (pe_v = '1') then next_state := s8;
@@ -196,6 +206,7 @@ begin
 
         when s8 =>
             next_state := s7;
+            M1_var := "10";
             M4_var := "10";
             M5_var := "01";
             M10_var := "10";
@@ -203,6 +214,7 @@ begin
             RegWr_var := '1'; 
 
         when s9 =>
+            M1_var := "10";
             M3_var := '1';
             M11_var := "11";
             T3En_var := '1';
@@ -258,9 +270,14 @@ begin
             RegWr_var := '1';
 
         when s15 => 
-            next_state := s1;
+            if (IRVal(15 downto 12) = "0110") then 
+                next_state := s7;
+                M1_var := "10";
+            else 
+                next_state := s0;
+            end if;
             PCWr_var := '1';
-                 
+            
         end case; 
 
         M1 <= M1_var;

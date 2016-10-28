@@ -20,7 +20,7 @@ vcom -93 -work work {/home/virtualgod/Altera/RISC1/PE.vhd}
 
 vcom -93 -work work {/home/virtualgod/Altera/RISC1/testbench_full.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  Testbench_full
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  Testbench_full
 
 add wave *
 view structure

@@ -4,7 +4,8 @@ library work;
 use work.finalComponents.all;
 
 entity RISC1 is
-    port(clk,reset: in std_logic);
+    port(clk,reset: in std_logic;
+        x: out std_logic_vector(15 downto 0));
 end entity;
 
 architecture Struct of RISC1 is
@@ -14,6 +15,7 @@ architecture Struct of RISC1 is
     signal C,Z,PE_V,comp: std_logic;
     signal IRVal: std_logic_vector(15 downto 0);
 begin
+    x <= IRVal;
     dp: Datapath_RISC port map
         (M2=>M2,M3=>M3,M6=>M6,M7=>M7,M8=>M8,M9=>M9,M14=>M14,
         PCWr=>PCWr,PCTempWr=>PCTempWr,IREn=>IREn,MemWr=>MemWr,

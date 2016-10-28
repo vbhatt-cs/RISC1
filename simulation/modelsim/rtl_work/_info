@@ -23,9 +23,9 @@ VzjlzM3ja5jYo>D]RCjVLP3
 !s100 :QR`mjlNJOEio@mja2l5H2
 Z8 OV;C;10.4b;61
 31
-Z9 !s110 1477320875
+Z9 !s110 1477495455
 !i10b 1
-Z10 !s108 1477320875.000000
+Z10 !s108 1477495455.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/alu.vhd|
 Z12 !s107 /home/virtualgod/Altera/RISC1/alu.vhd|
 !i113 1
@@ -93,7 +93,7 @@ R19
 R13
 R14
 Econtrolpath
-Z20 w1477319496
+Z20 w1477495368
 R4
 R5
 R0
@@ -105,11 +105,11 @@ Vazg5N=0X?]2;L6R8@e]UZ0
 !s100 462GhkQSVzUlkgUU<H1FS3
 R8
 31
-Z23 !s110 1477320874
+R9
 !i10b 1
-Z24 !s108 1477320874.000000
-Z25 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/controlpath.vhdl|
-Z26 !s107 /home/virtualgod/Altera/RISC1/controlpath.vhdl|
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/controlpath.vhdl|
+Z24 !s107 /home/virtualgod/Altera/RISC1/controlpath.vhdl|
 !i113 1
 R13
 R14
@@ -119,27 +119,27 @@ R5
 DEx4 work 11 controlpath 0 22 azg5N=0X?]2;L6R8@e]UZ0
 l17
 L13
-VAK::RAAD`dI8K1OU^R4913
-!s100 2M91UJ4do7<33I6kj1H@b0
+V[>@JBJWFhjQenAf8mIm[e0
+!s100 AXKjhmc0`LYM:nL?1]1iO0
 R8
 31
-R23
+R9
 !i10b 1
+R10
+R23
 R24
-R25
-R26
 !i113 1
 R13
 R14
 Edatapath_risc
-Z27 w1477312135
+Z25 w1477415349
 R2
 R3
 R4
 R5
 R0
-Z28 8/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd
-Z29 F/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd
+Z26 8/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd
+Z27 F/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd
 l0
 L7
 V>FgPO1L;RbJ8P:a`M=26j3
@@ -148,9 +148,9 @@ R8
 31
 R9
 !i10b 1
-R24
-Z30 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd|
-Z31 !s107 /home/virtualgod/Altera/RISC1/DataPath_RISC.vhd|
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/DataPath_RISC.vhd|
+Z29 !s107 /home/virtualgod/Altera/RISC1/DataPath_RISC.vhd|
 !i113 1
 R13
 R14
@@ -162,15 +162,15 @@ R5
 DEx4 work 13 datapath_risc 0 22 >FgPO1L;RbJ8P:a`M=26j3
 l28
 L19
-VBfF0?XC<IGP[zhCbeaQd10
-!s100 1<dz[9ZnI39L1]DoV6E8z2
+VYJI7Si>8UQV982DXL4gXD3
+!s100 :WAoGka8]J>7C^LQJ?>Rd0
 R8
 31
 R9
 !i10b 1
-R24
-R30
-R31
+R10
+R28
+R29
 !i113 1
 R13
 R14
@@ -187,22 +187,22 @@ V9OW4NHlN;d[>GGEjaF:MM1
 !s100 R7R:=CckaYj:F]Ja<l=^l0
 R8
 31
-R23
+R9
 !i10b 1
-R24
+R10
 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/datapathComponents.vhd|
 !s107 /home/virtualgod/Altera/RISC1/datapathComponents.vhd|
 !i113 1
 R13
 R14
 Edataregister
-Z32 w1476204747
+Z30 w1476204747
 R2
 R4
 R5
 R0
-Z33 8/home/virtualgod/Altera/RISC1/dataRegister.vhd
-Z34 F/home/virtualgod/Altera/RISC1/dataRegister.vhd
+Z31 8/home/virtualgod/Altera/RISC1/dataRegister.vhd
+Z32 F/home/virtualgod/Altera/RISC1/dataRegister.vhd
 l0
 L6
 VAF5_l4^YIY_Zn;>kmY:4;1
@@ -212,8 +212,8 @@ R8
 R9
 !i10b 1
 R10
-Z35 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/dataRegister.vhd|
-Z36 !s107 /home/virtualgod/Altera/RISC1/dataRegister.vhd|
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/dataRegister.vhd|
+Z34 !s107 /home/virtualgod/Altera/RISC1/dataRegister.vhd|
 !i113 1
 R13
 R14
@@ -231,8 +231,8 @@ R8
 R9
 !i10b 1
 R10
-R35
-R36
+R33
+R34
 !i113 1
 R13
 R14
@@ -249,9 +249,9 @@ VTeRg@1If[m=_PMXFH1bD;2
 !s100 Y8iPn]C=g>8o6z^^1lLYU0
 R8
 31
-R23
+R9
 !i10b 1
-R24
+R10
 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/finalComponents.vhd|
 !s107 /home/virtualgod/Altera/RISC1/finalComponents.vhd|
 !i113 1
@@ -260,34 +260,34 @@ R14
 Pmem_package
 R4
 R5
-w1477320152
+w1477416400
 R0
 8/home/virtualgod/Altera/RISC1/memPackage.vhd
 F/home/virtualgod/Altera/RISC1/memPackage.vhd
 l0
 L3
-V^9d@HFgSeYh?ZU@Mk:FS:3
-!s100 B4^ej_ZFOeni[JcG^i52U2
+VoKig]im6Ucn>TZW<W3mdf3
+!s100 Ll=ZAE56omokFTHoWMo?I2
 R8
 31
-R23
+R9
 !i10b 1
-R24
+R10
 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/memPackage.vhd|
 !s107 /home/virtualgod/Altera/RISC1/memPackage.vhd|
 !i113 1
 R13
 R14
 Ememory
-Z37 w1477320805
-Z38 DPx4 work 11 mem_package 0 22 ^9d@HFgSeYh?ZU@Mk:FS:3
+Z35 w1477495077
+Z36 DPx4 work 11 mem_package 0 22 oKig]im6Ucn>TZW<W3mdf3
 R2
 R3
 R4
 R5
 R0
-Z39 8/home/virtualgod/Altera/RISC1/memory.vhd
-Z40 F/home/virtualgod/Altera/RISC1/memory.vhd
+Z37 8/home/virtualgod/Altera/RISC1/memory.vhd
+Z38 F/home/virtualgod/Altera/RISC1/memory.vhd
 l0
 L8
 V8<FKSSD6Jf^;6M@3iF0=D0
@@ -297,41 +297,41 @@ R8
 R9
 !i10b 1
 R10
-Z41 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/memory.vhd|
-Z42 !s107 /home/virtualgod/Altera/RISC1/memory.vhd|
+Z39 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/memory.vhd|
+Z40 !s107 /home/virtualgod/Altera/RISC1/memory.vhd|
 !i113 1
 R13
 R14
 Abehave
-R38
+R36
 R2
 R3
 R4
 R5
 DEx4 work 6 memory 0 22 8<FKSSD6Jf^;6M@3iF0=D0
-l18
+l19
 L16
-VSE9o8j@9dWLa^LKzdDT=L2
-!s100 nYA4nYX4K5A9G8lNlD<Df2
+VIdSg6Y_U9k_Z_NWoBF_cT0
+!s100 LAU[]^Xz@Qg<moonY0]Z<1
 R8
 31
 R9
 !i10b 1
 R10
-R41
-R42
+R39
+R40
 !i113 1
 R13
 R14
 Epe
-Z43 w1477236426
+Z41 w1477236426
 R2
 R3
 R4
 R5
 R0
-Z44 8/home/virtualgod/Altera/RISC1/PE.vhd
-Z45 F/home/virtualgod/Altera/RISC1/PE.vhd
+Z42 8/home/virtualgod/Altera/RISC1/PE.vhd
+Z43 F/home/virtualgod/Altera/RISC1/PE.vhd
 l0
 L7
 V^OJHi6Uhgg9`b0ZdjnMTk3
@@ -341,8 +341,8 @@ R8
 R9
 !i10b 1
 R10
-Z46 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/PE.vhd|
-Z47 !s107 /home/virtualgod/Altera/RISC1/PE.vhd|
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/PE.vhd|
+Z45 !s107 /home/virtualgod/Altera/RISC1/PE.vhd|
 !i113 1
 R13
 R14
@@ -361,20 +361,20 @@ R8
 R9
 !i10b 1
 R10
-R46
-R47
+R44
+R45
 !i113 1
 R13
 R14
 Eregfile
-Z48 w1477224634
+Z46 w1477224634
 R2
 R3
 R4
 R5
 R0
-Z49 8/home/virtualgod/Altera/RISC1/regFile.vhd
-Z50 F/home/virtualgod/Altera/RISC1/regFile.vhd
+Z47 8/home/virtualgod/Altera/RISC1/regFile.vhd
+Z48 F/home/virtualgod/Altera/RISC1/regFile.vhd
 l0
 L7
 Vj?YCT]T20m_gc84m1KG`73
@@ -384,8 +384,8 @@ R8
 R9
 !i10b 1
 R10
-Z51 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/regFile.vhd|
-Z52 !s107 /home/virtualgod/Altera/RISC1/regFile.vhd|
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/regFile.vhd|
+Z50 !s107 /home/virtualgod/Altera/RISC1/regFile.vhd|
 !i113 1
 R13
 R14
@@ -404,60 +404,60 @@ R8
 R9
 !i10b 1
 R10
-R51
-R52
+R49
+R50
 !i113 1
 R13
 R14
 Erisc1
-Z53 w1477309294
-Z54 DPx4 work 15 finalcomponents 0 22 TeRg@1If[m=_PMXFH1bD;2
+Z51 w1477391715
+Z52 DPx4 work 15 finalcomponents 0 22 TeRg@1If[m=_PMXFH1bD;2
 R4
 R5
 R0
-Z55 8/home/virtualgod/Altera/RISC1/RISC1.vhd
-Z56 F/home/virtualgod/Altera/RISC1/RISC1.vhd
+Z53 8/home/virtualgod/Altera/RISC1/RISC1.vhd
+Z54 F/home/virtualgod/Altera/RISC1/RISC1.vhd
 l0
 L6
-V0HWm7H21DMd8?=4cW[@2M3
-!s100 m5ASK4Ca0KCGNU95Pb>AP2
+V9A=k@UjdIlz78Ab]N@>X>0
+!s100 [BloAkdM@=]P8YVHg[<@V0
 R8
 31
 R9
 !i10b 1
 R10
-Z57 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/RISC1.vhd|
-Z58 !s107 /home/virtualgod/Altera/RISC1/RISC1.vhd|
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/RISC1.vhd|
+Z56 !s107 /home/virtualgod/Altera/RISC1/RISC1.vhd|
 !i113 1
 R13
 R14
 Astruct
-R54
+R52
 R4
 R5
-DEx4 work 5 risc1 0 22 0HWm7H21DMd8?=4cW[@2M3
-l16
-L10
-V8Rj?d>zPSgP7]9LdzZCdi2
-!s100 ]@53UJa3dLe550IMClR0E2
+DEx4 work 5 risc1 0 22 9A=k@UjdIlz78Ab]N@>X>0
+l17
+L11
+VYSBZ6cgj_:8mNQoMcOo:a0
+!s100 Gm=BRDPcFH7ER36k[<NGn2
 R8
 31
 R9
 !i10b 1
 R10
-R57
-R58
+R55
+R56
 !i113 1
 R13
 R14
 Etestbench_full
-Z59 w1477311048
+Z57 w1477311048
 R3
 R4
 R5
 R0
-Z60 8/home/virtualgod/Altera/RISC1/testbench_full.vhd
-Z61 F/home/virtualgod/Altera/RISC1/testbench_full.vhd
+Z58 8/home/virtualgod/Altera/RISC1/testbench_full.vhd
+Z59 F/home/virtualgod/Altera/RISC1/testbench_full.vhd
 l0
 L5
 VFnofXY4mnn7LN[51:Jm;a2
@@ -467,8 +467,8 @@ R8
 R9
 !i10b 1
 R10
-Z62 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/testbench_full.vhd|
-Z63 !s107 /home/virtualgod/Altera/RISC1/testbench_full.vhd|
+Z60 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/testbench_full.vhd|
+Z61 !s107 /home/virtualgod/Altera/RISC1/testbench_full.vhd|
 !i113 1
 R13
 R14
@@ -486,8 +486,8 @@ R8
 R9
 !i10b 1
 R10
-R62
-R63
+R60
+R61
 !i113 1
 R13
 R14

@@ -2,5 +2,9 @@ lhi r0,10
 lhi r1,20
 add r2,r1,r0
 ndu r3,r1,r7
-sw r2,r4,29
-sw r3,r4,30
+lhi r4,1
+sw r2,r4,0
+sw r3,r4,1
+lm r4,0b000000011
+add r4,r4,r7
+sm r4,0b000011111

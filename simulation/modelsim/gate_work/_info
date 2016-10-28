@@ -9,27 +9,27 @@ z2
 cModel Technology
 Z0 d/home/virtualgod/Altera/RISC1/simulation/modelsim
 Erisc1
-Z1 w1477224701
+Z1 w1477320858
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx4 maxv 14 maxv_atom_pack 0 22 amgM4IMVBLVdz>iV8=;9F1
+Z3 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 f?_K>;kmBa?X3Y0g6:6=L1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx4 maxv 15 maxv_components 0 22 h8G31Q2WhDAW9LgR51CA<3
-Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx9 cycloneiv 20 cycloneiv_components 0 22 g4>?WSg9<FW;=OdzN^6;`0
 R0
-Z8 8RISC1.vho
-Z9 FRISC1.vho
+Z8 8RISC1_6_1200mv_0c_slow.vho
+Z9 FRISC1_6_1200mv_0c_slow.vho
 l0
 L35
-V3WBA<RKT<TLRhLig9A8;o0
-!s100 UG3lHE;b_RZ>Ej7_nT3>H3
+V;m2V5h8cI5bFGHzMJ9hHI2
+!s100 Ne_=:h9=L7MCDPlVI4>_=1
 Z10 OV;C;10.4b;61
 31
-Z11 !s110 1477224781
+Z11 !s110 1477325713
 !i10b 1
-Z12 !s108 1477224781.000000
-Z13 !s90 -reportprogress|300|-93|-work|work|RISC1.vho|
-Z14 !s107 RISC1.vho|
+Z12 !s108 1477325713.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|RISC1_6_1200mv_0c_slow.vho|
+Z14 !s107 RISC1_6_1200mv_0c_slow.vho|
 !i113 1
 Z15 o-93 -work work
 Z16 tExplicit 1
@@ -40,11 +40,11 @@ R4
 R5
 R6
 R7
-DEx4 work 5 risc1 0 22 3WBA<RKT<TLRhLig9A8;o0
-l59
-L45
-V9DQ1EWWEag_WQ@F2bea@G3
-!s100 =S>h9n=o8zf[T6Me0:`bm2
+DEx4 work 5 risc1 0 22 ;m2V5h8cI5bFGHzMJ9hHI2
+l62
+L47
+VjgbLfHTaz?EJ`81_k`blF3
+!s100 k[0aWFN[SQ:_CG3;hEGE=1
 R10
 31
 R11
@@ -55,37 +55,37 @@ R14
 !i113 1
 R15
 R16
-Etestbench
-Z17 w1477224491
+Etestbench_full
+Z17 w1477311048
 Z18 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R5
 R6
-R7
 R0
-Z19 8/home/virtualgod/Altera/RISC1/testbench_regfile.vhd
-Z20 F/home/virtualgod/Altera/RISC1/testbench_regfile.vhd
+Z19 8/home/virtualgod/Altera/RISC1/testbench_full.vhd
+Z20 F/home/virtualgod/Altera/RISC1/testbench_full.vhd
 l0
 L5
-VjKgdg1@CQF3UiHOImBg1X1
-!s100 LBzUjfjj_eDYLaRo:?DAa1
+VFnofXY4mnn7LN[51:Jm;a2
+!s100 bTY8gW4`d@WMBQE8Fj[?e0
 R10
 31
 R11
 !i10b 1
 R12
-Z21 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/testbench_regfile.vhd|
-Z22 !s107 /home/virtualgod/Altera/RISC1/testbench_regfile.vhd|
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/virtualgod/Altera/RISC1/testbench_full.vhd|
+Z22 !s107 /home/virtualgod/Altera/RISC1/testbench_full.vhd|
 !i113 1
 R15
 R16
 Abehave
 R18
+R5
 R6
-R7
-DEx4 work 9 testbench 0 22 jKgdg1@CQF3UiHOImBg1X1
-l26
+DEx4 work 14 testbench_full 0 22 FnofXY4mnn7LN[51:Jm;a2
+l16
 L8
-V<CdeMDgjjaO5nQi^;@[hM1
-!s100 iPhQ6B<8nbfk2Mme]MeB62
+VJ?6>KglQVWHbBZcGPm1bL1
+!s100 o`>X[Mz=YzjLFa4DVkU;Q0
 R10
 31
 R11

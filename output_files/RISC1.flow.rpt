@@ -1,5 +1,5 @@
 Flow report for RISC1
-Mon Oct 24 20:24:19 2016
+Fri Oct 28 19:29:13 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -41,26 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 24 20:24:19 2016       ;
+; Flow Status                        ; Successful - Fri Oct 28 19:29:13 2016       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; RISC1                                       ;
 ; Top-level Entity Name              ; RISC1                                       ;
-; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 0 / 14,400 ( 0 % )                          ;
-;     Total combinational functions  ; 0 / 14,400 ( 0 % )                          ;
-;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2 / 81 ( 2 % )                              ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 552,960 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                               ;
-; Total PLLs                         ; 0 / 3 ( 0 % )                               ;
-; Device                             ; EP4CGX15BF14C6                              ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 649 / 22,320 ( 3 % )                        ;
+;     Total combinational functions  ; 638 / 22,320 ( 3 % )                        ;
+;     Dedicated logic registers      ; 244 / 22,320 ( 1 % )                        ;
+; Total registers                    ; 244                                         ;
+; Total pins                         ; 18 / 154 ( 12 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 524,288 / 608,256 ( 86 % )                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -69,39 +65,43 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/24/2016 20:23:33 ;
+; Start date & time ; 10/28/2016 19:28:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RISC1               ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+--------------------------------------+---------------------------------+---------------+-------------+------------------+
-; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id       ;
-+--------------------------------------+---------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 128534985362614.147732081322916 ; --            ; --          ; --               ;
-; EDA_DESIGN_INSTANCE_NAME             ; dut                             ; --            ; --          ; Testbench_full   ;
-; EDA_DESIGN_INSTANCE_NAME             ; dut                             ; --            ; --          ; Testbench_RF     ;
-; EDA_DESIGN_INSTANCE_NAME             ; dut                             ; --            ; --          ; Testbench_memory ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Testbench_full                  ; --            ; --          ; eda_simulation   ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_simulation   ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --               ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_FILE                  ; testbench_full.vhd              ; --            ; --          ; Testbench_full   ;
-; EDA_TEST_BENCH_FILE                  ; testbench_regfile.vhd           ; --            ; --          ; Testbench_RF     ;
-; EDA_TEST_BENCH_FILE                  ; testbench_mem.vhd               ; --            ; --          ; Testbench_memory ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_full                  ; --            ; --          ; Testbench_full   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_RF                    ; --            ; --          ; Testbench_RF     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_memory                ; --            ; --          ; Testbench_memory ;
-; EDA_TEST_BENCH_NAME                  ; Testbench_RF                    ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; Testbench_memory                ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; Testbench_full                  ; --            ; --          ; eda_simulation   ;
-; PARTITION_COLOR                      ; 16764057                        ; --            ; --          ; Top              ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top              ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; --          ; Top              ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --               ;
-+--------------------------------------+---------------------------------+---------------+-------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++--------------------------------------+---------------------------------------+---------------+-------------+------------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id       ;
++--------------------------------------+---------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 128534985362614.147766310020981       ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --            ; --          ; Testbench_full   ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --            ; --          ; Testbench_RF     ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --            ; --          ; Testbench_memory ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Testbench_full                        ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; testbench_full.vhd                    ; --            ; --          ; Testbench_full   ;
+; EDA_TEST_BENCH_FILE                  ; testbench_regfile.vhd                 ; --            ; --          ; Testbench_RF     ;
+; EDA_TEST_BENCH_FILE                  ; testbench_mem.vhd                     ; --            ; --          ; Testbench_memory ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_full                        ; --            ; --          ; Testbench_full   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_RF                          ; --            ; --          ; Testbench_RF     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Testbench_memory                      ; --            ; --          ; Testbench_memory ;
+; EDA_TEST_BENCH_NAME                  ; Testbench_RF                          ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; Testbench_memory                      ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; Testbench_full                        ; --            ; --          ; eda_simulation   ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --               ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --               ;
++--------------------------------------+---------------------------------------+---------------+-------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -109,12 +109,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 1275 MB             ; 00:00:37                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 1376 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 1063 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 1001 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1310 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:44                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 1230 MB             ; 00:00:35                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 1329 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 1009 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 1048 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1270 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:50                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
