@@ -1,0 +1,542 @@
+Partition Merge report for RISC1
+Sat Oct 29 18:52:20 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                          ;
++------------------------------------+---------------------------------------------+
+; Partition Merge Status             ; Successful - Sat Oct 29 18:52:20 2016       ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; RISC1                                       ;
+; Top-level Entity Name              ; RISC1                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 3,414                                       ;
+;     Total combinational functions  ; 1,707                                       ;
+;     Dedicated logic registers      ; 2,266                                       ;
+; Total registers                    ; 2266                                        ;
+; Total pins                         ; 3                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 528,400                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                            ;
++----------------------------------------+--------------+-----------+--------------------------------+-------------------+----------------------------------------+---------+
+; Name                                   ; Type         ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                      ; Details ;
++----------------------------------------+--------------+-----------+--------------------------------+-------------------+----------------------------------------+---------+
+; Datapath_RISC:dp|regFile:rf|reg[0][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[0][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[0][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[1][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[1][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[2][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[2][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[3][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[3][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[4][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[4][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[5][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[5][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[6][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[6][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][0]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][0]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][10] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][10] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][11] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][11] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][12] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][12] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][13] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][13] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][14] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][14] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][15] ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][15] ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][1]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][1]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][2]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][2]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][3]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][3]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][4]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][4]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][5]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][5]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][6]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][6]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][7]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][7]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][8]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][8]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][9]  ; N/A     ;
+; Datapath_RISC:dp|regFile:rf|reg[7][9]  ; post-fitting ; connected ; Top                            ; post-synthesis    ; Datapath_RISC:dp|regFile:rf|reg[7][9]  ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|gnd                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; auto_signaltap_0|vcc                   ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC    ; N/A     ;
+; clk                                    ; post-fitting ; connected ; Top                            ; post-synthesis    ; clk                                    ; N/A     ;
++----------------------------------------+--------------+-----------+--------------------------------+-------------------+----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                    ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top  ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 681  ; 146              ; 2587                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total combinational functions               ; 569  ; 120              ; 1018                           ; 0                              ;
+; Logic element usage by number of LUT inputs ;      ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 389  ; 50               ; 641                            ; 0                              ;
+;     -- 3 input functions                    ; 139  ; 34               ; 243                            ; 0                              ;
+;     -- <=2 input functions                  ; 41   ; 36               ; 134                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Logic elements by mode                      ;      ;                  ;                                ;                                ;
+;     -- normal mode                          ; 553  ; 112              ; 930                            ; 0                              ;
+;     -- arithmetic mode                      ; 16   ; 8                ; 88                             ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total registers                             ; 242  ; 90               ; 1934                           ; 0                              ;
+;     -- Dedicated logic registers            ; 242  ; 90               ; 1934                           ; 0                              ;
+;     -- I/O registers                        ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Virtual pins                                ; 0    ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 3    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0    ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 4112 ; 0                ; 524288                         ; 0                              ;
+; Total RAM block bits                        ; 0    ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Connections                                 ;      ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 1    ; 133              ; 2749                           ; 0                              ;
+;     -- Registered Input Connections         ; 0    ; 101              ; 2224                           ; 0                              ;
+;     -- Output Connections                   ; 2573 ; 276              ; 34                             ; 0                              ;
+;     -- Registered Output Connections        ; 256  ; 275              ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Internal Connections                        ;      ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 5639 ; 939              ; 13034                          ; 0                              ;
+;     -- Registered Connections               ; 1308 ; 719              ; 9784                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; External Connections                        ;      ;                  ;                                ;                                ;
+;     -- Top                                  ; 0    ; 122              ; 2452                           ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 122  ; 20               ; 267                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 2452 ; 267              ; 64                             ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Partition Interface                         ;      ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 5    ; 44               ; 452                            ; 0                              ;
+;     -- Output Ports                         ; 2    ; 62               ; 271                            ; 0                              ;
+;     -- Bidir Ports                          ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Registered Ports                            ;      ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0    ; 4                ; 262                            ; 0                              ;
+;     -- Registered Output Ports              ; 0    ; 28               ; 257                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Port Connectivity                           ;      ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0    ; 0                ; 15                             ; 0                              ;
+;     -- Output Ports driven by GND           ; 0    ; 28               ; 2                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0    ; 0                ; 17                             ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0    ; 0                ; 1                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0    ; 24               ; 131                            ; 0                              ;
+;     -- Output Ports with no Source          ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0    ; 29               ; 145                            ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0    ; 29               ; 259                            ; 0                              ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                               ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; Name                              ; Partition ; Type          ; Location ; Status      ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; altera_reserved_tck               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdi               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdo               ; Top       ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo        ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tms               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; clk                               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- clk                        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- clk~input                  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; rst                               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- rst                        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- rst~input                  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; x                                 ; Top       ; Output Port   ; n/a      ;             ;
+;     -- x                          ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- x~output                   ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
++-----------------------------------+-----------+---------------+----------+-------------+
+
+
++---------------------------------------------------------+
+; Partition Merge Resource Usage Summary                  ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 3,414     ;
+;                                             ;           ;
+; Total combinational functions               ; 1707      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 1080      ;
+;     -- 3 input functions                    ; 416       ;
+;     -- <=2 input functions                  ; 211       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1595      ;
+;     -- arithmetic mode                      ; 112       ;
+;                                             ;           ;
+; Total registers                             ; 2266      ;
+;     -- Dedicated logic registers            ; 2266      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 3         ;
+; Total memory bits                           ; 528400    ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 1438      ;
+; Total fan-out                               ; 16620     ;
+; Average fan-out                             ; 4.02      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------+
+; Datapath_RISC:dp|memory:mem|altsyncram:ram_rtl_0|altsyncram_io81:auto_generated|ALTSYNCRAM                                                                                                            ; AUTO ; Single Port      ; 257          ; 16           ; --           ; --           ; 4112   ; db/RISC1.ram0_memory_e411fb78.hdl.mif ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_f424:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 128          ; 4096         ; 128          ; 524288 ; None                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Sat Oct 29 18:52:19 2016
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off RISC1 -c RISC1 --merge=on
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 289 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
+Info (21057): Implemented 3632 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 3480 logic cells
+    Info (21064): Implemented 144 RAM segments
+Info: Quartus Prime Partition Merge was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1389 megabytes
+    Info: Processing ended: Sat Oct 29 18:52:20 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

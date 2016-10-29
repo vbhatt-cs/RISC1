@@ -11,7 +11,7 @@ fo.write("constant MEM_INIT : ram_t := (\n")
 
 cnt=0
 for line in fi:
-    fo.write(str(cnt)+" => "+"\""+line.rstrip('\n')+"\",\n")
+    fo.write(str(cnt)+" => "+"\""+line.rstrip('\n').rstrip('\r')+"\",\n")
     cnt+=1
 
 # for i in range(cnt,65535):
